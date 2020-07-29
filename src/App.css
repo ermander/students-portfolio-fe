@@ -36,3 +36,62 @@
     transform: rotate(360deg);
   }
 }
+
+.Navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  background-color: #444;
+  color: #fff;
+}
+
+.Links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 15%;
+}
+
+.striveLogo{
+  color: #fff;
+}
+
+.name{
+  margin: 5vw;
+}
+
+.surname{
+  margin: 5vw;
+}
+
+.country{
+  margin: 5vw;
+}
+
+.dateOfBirth{
+  margin: 5vw;
+}
+
+.email{
+  margin: 20vw;
+  margin-top: 5vh;
+}
+
+.striveLogo{
+  color: black;
+}
+
+.homeSpinner{
+  margin-top: 20vh;
+}
+
+.cardImage{
+  max-width: 100%;
+}
+
+.homeRow{
+  margin-top: 5vh;
+  margin-left: 5vw!important;
+  margin-right: 5vw!important;
+}
