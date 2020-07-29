@@ -12,7 +12,8 @@ class Home extends Component {
     }
 
     fetchAllStudents = async () => {
-        const rawStudentsData = await fetch("http://localhost:3002/students/")
+        const url = "https://students-portfolio-be.herokuapp.com/students/"
+        const rawStudentsData = await fetch(url)
         const parsedStudentsData = await rawStudentsData.json()
         this.setState({
             students: parsedStudentsData.students,
