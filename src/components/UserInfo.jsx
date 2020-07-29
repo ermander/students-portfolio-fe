@@ -10,7 +10,8 @@ class UserInfo extends Component {
     }
 
     userInfosFetch = async () => {
-        const rawUserData = await fetch("http://localhost:3002/students/" + this.props.match.params.id)
+        const url = "https://students-portfolio-be.herokuapp.com/students/"
+        const rawUserData = await fetch(url + this.props.match.params.id)
         const parsedUserData = await rawUserData.json()
         this.setState({
             userInfo: parsedUserData
@@ -18,7 +19,7 @@ class UserInfo extends Component {
 
         console.log(this.state.userInfo._id)
 
-        const rawUserProjects = await fetch("http://localhost:3002/students/" + this.state.userInfo._id + "/projects")
+        const rawUserProjects = await fetch(url + this.state.userInfo._id + "/projects")
         const parsedUserProjects = await rawUserProjects.json()        
         console.log(parsedUserProjects)
         this.setState({
