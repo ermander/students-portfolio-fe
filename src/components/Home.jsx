@@ -16,9 +16,13 @@ class Home extends Component {
         const rawStudentsData = await fetch(url)
         const parsedStudentsData = await rawStudentsData.json()
         this.setState({
-            students: parsedStudentsData.students,
-            fetchingStudents: false
+            students: parsedStudentsData.students
         })
+        if(this.state.students != []){
+            this.setState({
+                fetchAllStudents: false
+            })
+        }
         console.log(this.state.students)
     }
 
