@@ -29,7 +29,7 @@ class AddStudent extends Component {
         }
 
         try {
-            const url = "https://students-portfolio-be.herokuapp.com/students/"
+            const url = "https://students-portfolio-be.herokuapp.com/students"
             const sendNewStudent = await fetch(url, {
                 method: "POST",
                 headers: {
