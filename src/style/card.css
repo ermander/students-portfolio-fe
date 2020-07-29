@@ -1,45 +1,14 @@
-/* @import url('https//font.googleapis.com/css?') */
-
-
-.mainContainer{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
+.userInfoImage{
+    height: 70vh;
+    width: 40vw;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.userInfos{
+    text-align: left;    
 }
 
-.container .box{
-    position: relative;
-    width: 350px;
-    padding: 350px;
-    background: #fff;  
-    box-shadow: 0 5px 15px rgba(0,0,0,.1);
-    border-radius: 4px;
-    box-sizing: border-box;
-    overflow: hidden;
-    text-align: center;
-}
-
-.container .box .icon{
-    position: relative;
-    width: 80px;
-    height: 80px;
-    color: #fff;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 50%;
-    font-size: 40px;
-    font-weight: 700;
-    transition: 1s;
+.space{
+    margin-top: 6vh!important;
+    margin-bottom: 6vh!important;
+    margin-right: 10vw!important;
 }

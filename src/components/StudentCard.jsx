@@ -17,7 +17,7 @@ class StudentCard extends Component {
                         <br/>
                             Email: {this.props.email}
                         </Card.Text>
-                        <Link to={`/details/:${this.props.id}`} >
+                        <Link to={`/${this.props.id}`} >
                             <Button variant="primary">Info about {this.props.name}...</Button>
                         </Link>
                         </Card.Body>
