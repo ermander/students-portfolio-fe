@@ -17,7 +17,7 @@ function App() {
             <Route exect path="/:id" component={UserInfo} />
           </Switch>
           </div>
-      </Router>    
+      </Router> 
   );
 }
 

@@ -3,6 +3,7 @@ import { Spinner, Row, Col } from "react-bootstrap"
 import "../App.css"
 import StudentCard from './StudentCard';
 
+
 class Home extends Component {
 
     state = {
@@ -54,7 +55,8 @@ class Home extends Component {
                     )
                 )
                 }
-            </Row>
+            </Row>         
+            
             </>
         );
     }
