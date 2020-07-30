@@ -18,7 +18,7 @@ class Home extends Component {
         this.setState({
             students: parsedStudentsData.students
         })
-        if(this.state.students != []){
+        if(this.state.students.length > 0){
             this.setState({
                 fetchAllStudents: false
             })
