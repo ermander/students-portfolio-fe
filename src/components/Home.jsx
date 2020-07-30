@@ -17,13 +17,17 @@ class Home extends Component {
         const parsedStudentsData = await rawStudentsData.json()
         this.setState({
             students: parsedStudentsData.students
-        })
+        })        
+        console.log(this.state.students)
+        this.setStatusToFalse()
+    }
+
+    setStatusToFalse = () => {
         if(this.state.students.length > 0){
             this.setState({
-                fetchAllStudents: false
+                fetchingStudents: false
             })
         }
-        console.log(this.state.students)
     }
 
     componentDidMount(){
@@ -33,7 +37,7 @@ class Home extends Component {
     render() {
         return (
             <>
-            <Row className="homeRow">
+            <Row className="homeRow justify-content-center">
                 {this.state.fetchingStudents ? ( 
                 <Spinner animation="border" role="status" className="homeSpinner">
                 <span className="sr-only">Loading...</span>
